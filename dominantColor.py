@@ -18,7 +18,7 @@ class DominantColors:
         self.COLORS = kmeans.cluster_centers_
         self.LABELS = kmeans.labels_
         return self.COLORS.astype(int)
-img = '/Users/viki/Documents/Project/DominantColor/images/jpImage.png'
+img = '/Users/viki/Documents/Project/DominantColor/images/jpImage.jpg'
 clusters = 3
 dc = DominantColors(img, clusters)
 colors = dc.dominantColors()
